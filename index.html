@@ -32,4 +32,33 @@
     </div>
   </div>
   <div id="protectedContent" style="display:none;">
+  <script>
+    function validateAccess(){
+      const accepted =
+        document.getElementById("acceptPrivacy").checked;
+      const password =
+        document.getElementById("password").value;
+      const error =
+        document.getElementById("errorMsg");
+      if(!accepted){
+        error.textContent =
+          "Debe aceptar el Aviso de Privacidad.";
+        return;
+      }
+      if(password !== "2026"){
+        error.textContent =
+          "Contraseña incorrecta.";
+        return;
+      }
+      window.location.href = "index2.html";
+    }
+
+    document
+    .getElementById("password")
+    .addEventListener("keydown", function(e){
+      if(e.key === "Enter"){
+        validateAccess();
+      }
+    });
+  </script>    
 </body>
