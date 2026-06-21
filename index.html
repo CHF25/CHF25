@@ -8,40 +8,29 @@
 <body> 
    <div id="accessScreen">
      <div class="access-box">
+       <header>
+         <h2>Aviso de Privacidad</h2>
+       </header>
+       <p style="text-align:left">
+         La información mostrada en este sitio contiene datos relacionados con
+         cuotas, adeudos y administración interna de una unidad habitacional.
+         El acceso está destinado exclusivamente a propietarios y residentes
+         autorizados.
 
-   <header>
-     <h2>Aviso de Privacidad</h2>
-   </header>
-
-    <p style="text-align:left">
-    La información mostrada en este sitio contiene datos relacionados con
-    cuotas, adeudos y administración interna de una unidad habitacional.
-    El acceso está destinado exclusivamente a propietarios y residentes
-    autorizados.
-
-    Al continuar, usted acepta utilizar esta información únicamente para
-    fines informativos internos y se compromete a no difundirla a terceros
-    sin autorización de la Asamblea General.
-  </p>
-
-  <label>
-    <input type="checkbox" id="acceptPrivacy">
-    He leído y acepto el Aviso de Privacidad
-  </label>
-
-  <br><br>
-
-  <input type="password" id="password" placeholder="Ingrese la contraseña">
-
-  <br>
-
-  <button onclick="validateAccess()">Entrar</button>
-
-  <p id="errorMsg" style="color:red;"></p>
-
-
+         Al continuar, usted acepta utilizar esta información únicamente para
+         fines informativos internos y se compromete a no difundirla a terceros
+         sin autorización de la Asamblea General.
+       </p>
+       <label>
+         <input type="checkbox" id="acceptPrivacy">
+         He leído y acepto el Aviso de Privacidad
+       </label>
+       <br><br>
+       <input type="password" id="password" placeholder="Ingrese la contraseña">
+       <br>
+       <button onclick="validateAccess()">Entrar</button>
+       <p id="errorMsg" style="color:red;"></p>
+    </div>
   </div>
-  </div>
-
   <div id="protectedContent" style="display:none;">
 </body>
